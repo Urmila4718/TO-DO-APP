@@ -82,12 +82,12 @@ WSGI_APPLICATION = 'todo_site.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': os.environ.get('ENGINE')
-        'URL': os.environ.get('URL')
-        'NAME': os.environ.get('NAME')
-        'USER': os.environ.get('USER')
-        'PASSWORD': os.environ.get('PASSWORD')
-        'HOST': os.environ.get('HOST')
+        'ENGINE': os.environ.get('ENGINE'),
+        'URL': os.environ.get('URL'),
+        'NAME': os.environ.get('NAME'),
+        'USER': os.environ.get('USER'),
+        'PASSWORD': os.environ.get('PASSWORD'),
+        'HOST': os.environ.get('HOST'),
         'PORT': os.environ.get('PORT')
     }
 }
