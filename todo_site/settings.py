@@ -80,8 +80,17 @@ WSGI_APPLICATION = 'todo_site.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 
-DATABASES = {'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))}
-
+DATABASES = {
+    'default': {
+        'ENGINE': os.environ.get('ENGINE')
+        'URL': os.environ.get('URL')
+        'NAME': os.environ.get('NAME')
+        'USER': os.environ.get('USER')
+        'PASSWORD': os.environ.get('PASSWORD')
+        'HOST': os.environ.get('HOST')
+        'PORT': os.environ.get('PORT')
+    }
+}
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
